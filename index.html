@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            <div class="div2">
+
+                <h1 class="head1">USD to INR</h1>
+
+                <h2 class="cap1">USD</h2>
+                <input type="number" placeholder="Currency Value" class="val">
+
+                <h2 class="cap2">INR</h2>
+                <input type="number" onkeyup="update()" placeholder="Enter the Amount" class="inp">
+
+                <button class="swapbtn" onclick="swap()">Swap</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+var h1 = document.querySelector('.head1')
+var inp = document.querySelector('.inp')
+var val = document.querySelector('.val')
+var capt1 = document.querySelector('.cap1')
+var capt2 = document.querySelector('.cap2')
+
+let currate = 83.18
+
+function swap(){
+    if (h1.textContent =='USD to INR'){
+        h1.textContent = 'INR to USD'
+        capt1.textContent = 'USD'
+        capt2.textContent = 'INR'
+    }else if (h1.textContent == 'INR to USD'){
+        h1.textContent ='USD to INR'
+        capt1.textContent = 'INR'
+        capt2.textContent = 'USD'
+    }
+}
+
+inp.addEventListener('input', function() {
+    if (h1.textContent =='USD to INR'){
+        val.value = inp.value*currate;
+    }else if (h1.textContent == 'INR to USD'){
+        val.value = inp.value/currate;
+    }
+});
+
+</script>
+
+</html>
