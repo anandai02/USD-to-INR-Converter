@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.div1{
+    margin-top: 100px;
+    height: 700px;
+    width: 500px;
+}
+
+.div2{
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+    align-content: center;
+}
+
+.swapbtn{
+    color: black;
+    background-color: #FD6569;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 6px;
+    margin-top: 10px;
+    border: none;
+    margin-left: 83%;
+}
+
+.cap1, .cap2{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.val, .inp{
+    margin-bottom: 25px;
+    padding: 15px;
+    height: 30px;
+    width: 90%;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 15px;
+    text-align: left;
+}
