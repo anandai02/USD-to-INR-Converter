@@ -11,15 +11,16 @@ body{
 }
 
 .div1{
-    margin-top: 100px;
-    margin: 20px;
+    margin-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 700px;
     width: 500px;
 }
 
 .div2{
     background-color: black;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
     align-content: center;
 }
@@ -30,14 +31,18 @@ body{
     padding: 10px;
     font-size: medium;
     border-radius: 6px;
-    margin-top: 10px;
+    margin-top: 5px;
     border: none;
     margin-left: 83%;
 }
 
 .cap1, .cap2{
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.cap1{
+    margin-top: 20px;
 }
 
 .val, .inp{
