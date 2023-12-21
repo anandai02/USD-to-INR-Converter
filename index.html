@@ -35,6 +35,12 @@ var capt1 = document.querySelector('.cap1')
 var capt2 = document.querySelector('.cap2')
 
 let currate = 83.18
+const host = 'api.frankfurter.app';
+fetch(`https://${host}/latest?amount=1&from=USD&to=INR`)
+  .then(resp => resp.json())
+  .then((data) => {
+    currate = data.rates.INR
+});
 
 function swap(){
     if (h1.textContent =='USD to INR'){
